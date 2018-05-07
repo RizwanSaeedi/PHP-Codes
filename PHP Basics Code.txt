@@ -1,0 +1,84 @@
+<?php 
+// variables
+
+$name = "Akram";
+
+$a = 120;
+$b = 50;
+
+//echo $name;
+
+
+// conditions
+// Grading scheme
+  // Marks >= 80  ( A )
+  // Marks >= 70  ( B )
+  // Marks >= 60  ( C )
+  // Marks >= 50  ( D )
+
+
+$marks = 100;
+$grade = "";
+$remarks = "";
+
+if($marks >= 80)
+{
+	$grade = "A";
+	$remarks = "Excellent";
+}
+else if($marks >= 70)
+{
+	$grade = "B";
+}
+else if($marks >= 60)
+{
+	$grade = "C";
+}
+else if($marks >= 50)
+{
+	$grade = "D";
+}
+else if($marks >= 40)
+{
+	$grade = "E";
+	$remarks = "Pass";
+}
+else
+{
+	$grade = "F";
+	$remarks = "Fail";
+}
+
+// echo 'Marks = ' . $marks;
+// echo "<br>";
+// echo 'Grade = ' . $grade;
+// echo "<br>";
+// echo "Remakrs = " . $remarks;
+
+//functions
+
+	// define
+	function getSquare($x){
+		echo ($x * $x);
+	}
+
+	//call
+	//getSquare(6);
+
+// loops 
+
+	
+
+	// for($i = 1; $i <= 20; $i++){
+	// 	echo $i . '<br>';
+	// }
+
+// arrays
+
+$fruits = array('Apple', 'Mango', 'Grapes');
+foreach ($fruits as $fruit) {
+	echo $fruit;
+	echo "<br>";
+}
+
+ ?>
